@@ -1,5 +1,5 @@
 from book import get_books, Book, add_book
-from view import LandingView, DataView, AddBookView
+from view import LandingView, LibraryContentsView, AddBookView
 from tkinter import messagebox
 
 class DataController:
@@ -20,7 +20,7 @@ class DataController:
     def show_books(self):
         self.clear_view()
         books = get_books(self.file_path)
-        self.current_view = DataView(self.root, books, self.show_landing)
+        self.current_view = LibraryContentsView(self.root, books, self.show_landing)
 
     def show_add_book(self):
         self.clear_view()

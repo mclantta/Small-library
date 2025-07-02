@@ -23,7 +23,7 @@ class LandingView:
     def destroy(self):
         self.frame.destroy()
 
-class DataView:
+class LibraryContentsView:
     def __init__(self, root, books, on_back):
         self.frame = tk.Frame(root)
         self.frame.pack(fill=tk.BOTH, expand=True)

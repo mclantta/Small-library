@@ -1,8 +1,4 @@
 class Book:
-
-    # Sama juttu täällä, miksi nuo "author" etc. toistuu niin monesti??
-    # Eikö ne pitäis olla vain 1 paikkaa, jotta helppo muuttaa kun muutoksia tulee
-
     def __init__(self, title: str, author: str, isbn: str, published_year: int):
         self.title = title
         self.author = author
@@ -17,8 +13,8 @@ def get_books(file_path):
             if len(parts) == 4:
                 books.append(Book(*parts))
     
-    # Sort by publishing year (convert to int for correct sort)
-    books.sort(key=lambda b: int(b.published_year))   # HUOM, jos vaihdat tyyppiä, nii sit tätä int converttausta mikä on nyt, ei tarvisikaan tehdä
+    # Sort by publishing year
+    books.sort(key=lambda b: b.published_year)
     return books
 
 def add_book(file_path, book):
