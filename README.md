@@ -42,4 +42,8 @@ If I had more time, I would:
 - Add some user input validations
 - Improve error handling
 - Add logging
+- Add some linter to also run during pull request checks
 - Make some fixes: better GUI, "Add New Book" -view showing fields before clicking, longer book names shown better in GUI etc.
+
+## My thoughts about quality as a QA Engineer since 2015
+I believe quality begins with simple steps and accumulates over time. It's not just about testing features when they're finished, but also protecting the project from bad practises early on — such as developers pushing directly to main. Having solid unit tests helps ensure that developers don't unecessarily break the code, because fixing issues early is less expensive than discovering them later during QA.
