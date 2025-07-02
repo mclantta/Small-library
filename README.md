@@ -32,3 +32,14 @@ python src/main.py library.txt
 ```
 pytest
 ```
+
+## Future Improvements
+Time used: ~7 hours
+
+If I had more time, I would:
+- Add executable
+- Add more comprehensive tests, covering all edge cases
+- Add some user input validations
+- Improve error handling
+- Add logging
+- Make some fixes: better GUI, "Add New Book" -view showing fields before clicking, longer book names shown better in GUI etc.
