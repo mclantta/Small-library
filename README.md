@@ -23,6 +23,12 @@ Install all needed packages in virtual env from requirements.txt -file:
 python -m pip install -r requirements.txt
 ```
 
-Run program
+Run program in virtual env
 ```
-python src/main.py
+python src/main.py library.txt
+```
+
+## Run tests
+```
+pytest
+```
